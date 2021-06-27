@@ -1,0 +1,177 @@
+* {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  background:rgba(0,0,0,0.042);
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+botton,a {
+  cursor: position;
+  text-decoration: none;
+}
+section h2 {
+  text-align: center;
+  margin: 3rem 0;
+}
+.container #navbar {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  background: #616161;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  margin: 0 1rem;
+}
+#navbar ul li a {
+ color: #fff;
+ text-decoration: none;
+}
+
+
+
+.container #welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#welcome-section h1 {
+  font-size: 2.5rem;
+}
+#welcome-section a {
+  color: #fff; 
+  display: inline-block;
+  padding: .5rem 1.5rem;
+  background: #616161;
+}
+#welcome-section a i {
+  font-size: 1.5rem;
+  margin-left: .5rem
+}
+#welcome-section > div > * {
+  margin: 1rem 0;
+}
+
+
+
+#projects {
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
+}
+#projects ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  justify-content: center;
+  gap: 15px;
+}
+
+
+#projects ul li {
+  background: rgba(0,0,0,0.037);
+  padding: 1.5rem;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#projects ul li > * {
+  margin: .5rem 0;
+}
+#projects ul li a i{
+  font-size: 1.5rem;
+}
+
+
+
+#service-section {
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
+}
+#service-section ul {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  gap: 15px;
+
+}
+#service-section ul li {
+  text-align: center;
+  background: rgba(0,0,0,0.037);
+  padding: 2rem;
+}
+#service-section ul li > * {
+  margin: 1rem;
+}
+#service-section ul li h1 {
+  font-size: 2.5rem;
+}
+#service-section ul li p {
+  font-size: .9rem;
+  font-weight: 200;
+  color: rgba(0,0,0,0.553);
+  line-height: 1.5;
+}
+#service-section ul li button {
+  color: #fff; 
+  display: block;
+  padding: .5rem 1.5rem;
+  background: #616161;
+  border: none;
+  margin: 0 auto;
+}
+
+
+
+
+
+#gallery {
+  padding: 4rem 1.5rem 3rem 1.5rem;
+}
+#gallery ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  justify-content: center;
+  gap: 15px;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: #616161;
+  color: #fff;
+}
+footer p {
+  font-size: .8rem;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  #service-section ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 15px;
+
+}
+}
